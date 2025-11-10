@@ -10,9 +10,10 @@
   
   /* GRAY */
   /* create a range of grays as needed since we generally need more than a few. Separate each color by 100 so we can work more in between if needed in the future. */
-  --gray-300: #585858;
   /* just sort of inferring where these colors might land */
+  --gray-300: #585858;
   --gray-600: #BBBBBB;
+  --gray-800: #F5F5F5;
 
   /* BLUE */
   /* create a range of blues as needed since we generally need more than a few. Separate each color by 100 so we can work more in between if needed in the future. */
@@ -23,11 +24,12 @@
   */
   
   /**
-  FONT FAMILY - START
+  FONT GLOBALS - START
   */
   --font-family: 'Inter', sans-serif;
+  --default-font-color: var(--black);
   /*
-  FONT FAMILY - END
+  FONT GLOBALS - END
   */
 
 
@@ -36,6 +38,7 @@
   */
   --font-size-default: 15px;
   --font-size-medium: 16px;
+  --font-size-large: 24px;
   /*
   FONT SIZES - END
   */
@@ -68,6 +71,13 @@
   SPACING UNITS - END
   */
 
+  /** BOX SHADOW - START
+  */
+  --box-shadow-default: 0px 1px 5px 0px #3C3C432E;
+  /*
+  BOX SHADOW - END
+  */
+
   /* 
   BUTTON STYLES - START
    */
@@ -83,10 +93,21 @@
   /*
   BUTTON STYLES - END
   */
+
+  /** CARD STYLES - START
+  */
+  --card-background-color: var(--white);
+  --card-border-radius: var(--border-radius-medium);
+  --card-border: none;
+  --card-padding: var(--spacing-unit-default);
+  --card-box-shadow: var(--box-shadow-default);
+  
+
 }
 
 
 html,
 body {
   font-family: var(--font-family);
+  color: 
 }
