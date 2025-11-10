@@ -1,0 +1,60 @@
+:root {
+  /* 
+  COLORS - START
+  */
+
+  --black: #000000;
+  --white: #FFFFFF;
+  
+  /* GRAY */
+  /* create a range of grays as needed since we generally need more than a few. Separate each color by 100 so we can work more in between if needed in the future. */
+  --gray-300: #585858;
+  /* just sort of inferring where these colors might land */
+  --gray-600: #BBBBBB;
+
+  /* BLUE */
+  /* create a range of blues as needed since we generally need more than a few. Separate each color by 100 so we can work more in between if needed in the future. */
+  --blue-500: #1276D3;
+
+  /*
+  COLORS - END
+  */
+
+
+  /**
+  FONT SIZES - START
+  */
+  --font-size-default: 15px;
+  --font-size-medium: 16px;
+  /*
+  FONT SIZES - END
+  */
+
+
+  /**
+  FONT WEIGHTS - START
+  */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+  /*
+  FONT WEIGHTS - END
+  */
+
+
+  /** BORDER RADIUS - START
+  */
+  --border-radius-medium: 10px;
+  --border-radius-full: 9999px; /* ensure pill or circular elements have a full border radius for the shortest side */
+  /*
+  BORDER RADIUS - END
+  */
+
+  /** SPACING UNITS - START
+  */
+  --spacing-unit-default: 10px;
+  --spacing-unit-medium: 15px;
+  /*
+  SPACING UNITS - END
+  */
+}
