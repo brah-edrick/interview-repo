@@ -6,24 +6,31 @@ const meta = {
   title: 'Components/{{pascalCase name}}',
   component: {{pascalCase name}},
   tags: ['autodocs'],
-  argTypes: {
-    text: {
-      control: 'text',
-      description: 'The text to display',
-    },
-  },
-  args: {
-    text: '{{pascalCase name}}',
-  },
 } satisfies Meta<typeof {{pascalCase name}}>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
-  args: {
-    text: '{{pascalCase name}}',
-  },
+  render: () => ({
+    components: { {{pascalCase name}} },
+    template: '<{{pascalCase name}}>{{pascalCase name}}</{{pascalCase name}}>',
+  }),
 };
+
+export const CustomText: Story = {
+  render: () => ({
+    components: { {{pascalCase name}} },
+    template: '<{{pascalCase name}}>Custom Text</{{pascalCase name}}>',
+  }),
+};
+
+export const LongText: Story = {
+  render: () => ({
+    components: { {{pascalCase name}} },
+    template: '<{{pascalCase name}}>This is a longer text example to demonstrate how the component handles extended content</{{pascalCase name}}>',
+  }),
+};
+
 
 

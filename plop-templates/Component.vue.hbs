@@ -1,16 +1,9 @@
 <script setup lang="ts">
-interface Props {
-  text?: string;
-}
-
-const props = withDefaults(defineProps<Props>(), {
-  text: '{{pascalCase name}}',
-});
 </script>
 
 <template>
   <div class="{{kebabCase name}}">
-    \{{ props.text }}
+    <slot>{{pascalCase name}}</slot>
   </div>
 </template>
 
