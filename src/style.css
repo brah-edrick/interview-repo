@@ -36,6 +36,7 @@
   /**
   FONT SIZES - START
   */
+  --font-size-small: 14px;
   --font-size-default: 15px;
   --font-size-medium: 16px;
   --font-size-large: 24px;
@@ -82,6 +83,8 @@
 
 /*******************
   COMPONENT STYLES 
+  These styles are very likely to get reused across multiple components, so it's worth keeping them here for now.
+  Eventually many of these will be moved to their own files/folder with related components.
 *******************/
 
 /* TODO eventually many of these will be moved to their own files */
