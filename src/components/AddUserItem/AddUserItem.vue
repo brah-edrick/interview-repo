@@ -38,15 +38,19 @@ const handleAdd = () => {
     />
     <IconEmptyStateAvatarAlt class="avatar" v-else />
 
-    <div class="user-info">
+    <span class="user-info">
       <StyledText as="span" size="default">
         {{ user.name }}
       </StyledText>
       <StyledText as="span" size="small" color="gray-300">
         {{ user.location }}
       </StyledText>
-    </div>
-    <button @click="handleAdd" class="add-user-button">
+    </span>
+    <button
+      @click="handleAdd"
+      class="add-user-button"
+      aria-label="add-user-button"
+    >
       <IconPlus class="add-user-item-icon" />
     </button>
   </component>

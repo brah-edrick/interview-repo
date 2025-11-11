@@ -39,6 +39,7 @@ export const Disabled: Story = {
   args: {
     disabled: true,
     default: 'Disabled Button',
+    name: 'named-button'
   },
 };
 
@@ -46,12 +47,14 @@ export const Submit: Story = {
   args: {
     type: 'submit',
     default: 'Submit',
+    name: 'named-button'
   },
 };
 
 export const WithOnClick: Story = {
   args: {
     default: 'Click Me',
+    name: 'named-button'
   },
   render: (args) => ({
     components: { Button },

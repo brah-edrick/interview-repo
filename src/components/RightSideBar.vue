@@ -19,9 +19,11 @@ import AddUserItem from "./AddUserItem/AddUserItem.vue";
             name: 'John Stevens',
             location: 'San Francisco, CA',
           }"
+          as="li"
         />
         <AddUserItem
           :user="{ userId: '2', name: 'Laura Thomas', location: 'Oakland, CA' }"
+          as="li"
         />
         <AddUserItem
           :user="{
@@ -29,6 +31,7 @@ import AddUserItem from "./AddUserItem/AddUserItem.vue";
             name: 'Janet Wilson',
             location: 'Santa Clara, CA',
           }"
+          as="li"
         />
       </ul>
     </div>
