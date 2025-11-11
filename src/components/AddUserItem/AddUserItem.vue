@@ -34,7 +34,7 @@ const handleAdd = () => {
       class="avatar"
       v-if="user.imageUrl"
       :src="user.imageUrl"
-      alt="User Avatar"
+      :alt="`${user.name}'s avatar`"
     />
     <IconEmptyStateAvatarAlt class="avatar" v-else />
 
