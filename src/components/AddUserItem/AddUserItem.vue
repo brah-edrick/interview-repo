@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import IconEmptyStateAvatarAlt from "../../assets/IconEmptyStateAvatarAlt.vue";
 import IconPlus from "../../assets/IconPlus.vue";
+import StyledText from "../StyledText/StyledText.vue";
 
 interface User {
   userId: string;
@@ -38,8 +39,12 @@ const handleAdd = () => {
     <IconEmptyStateAvatarAlt class="avatar" v-else />
 
     <div class="add-user-item-info">
-      <span class="add-user-item-name">{{ user.name }}</span>
-      <span class="add-user-item-location">{{ user.location }}</span>
+      <StyledText as="span" weight="medium" size="default">
+        {{ user.name }}
+      </StyledText>
+      <StyledText as="span" size="small" color="gray-300">
+        {{ user.location }}
+      </StyledText>
     </div>
     <button @click="handleAdd" class="add-user-button">
       <IconPlus class="add-user-item-icon" />
@@ -66,16 +71,6 @@ const handleAdd = () => {
   flex: 1;
   display: flex;
   flex-direction: column;
-}
-
-.add-user-item-name {
-  font-size: var(--font-size-default);
-  font-weight: var(--font-weight-medium);
-}
-
-.add-user-item-location {
-  font-size: var(--font-size-small);
-  color: var(--gray-300);
 }
 
 .add-user-button {
