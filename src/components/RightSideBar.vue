@@ -12,6 +12,7 @@ import AddUserItem from "./AddUserItem/AddUserItem.vue";
       </StyledText>
       <StyledText as="p">This is some regular text</StyledText>
       <ul class="user-list">
+        <!-- realistically this would be a list of users from the database and would be iterated over in a loop -->
         <AddUserItem
           :user="{
             userId: '1',
