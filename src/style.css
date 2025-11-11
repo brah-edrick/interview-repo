@@ -69,6 +69,7 @@
   */
   --spacing-unit-default: 10px;
   --spacing-unit-medium: 15px;
+  --spacing-unit-large: 20px;
   /*
   SPACING UNITS - END
   */
@@ -81,13 +82,18 @@
   BOX SHADOW - END
   */
 
+  /** SIDEBAR - START
+  */
+  --sidebar-max-width: 300px;
+  /*
+  SIDEBAR - END
+  */
+
 /*******************
   COMPONENT STYLES 
   These styles are very likely to get reused across multiple components, so it's worth keeping them here for now.
   Eventually many of these will be moved to their own files/folder with related components.
 *******************/
-
-/* TODO eventually many of these will be moved to their own files */
 
   /* 
   BUTTON STYLES - START
@@ -141,7 +147,7 @@
   --select-options-font-size: var(--font-size-default);
   --select-options-font-weight: var(--font-weight-regular);
   --select-options-padding-x: var(--spacing-unit-default);
-  --select-options-padding-y: var(--spacing-unit-medium);
+  --select-options-padding-y: var(--spacing-unit-default);
   /* --select-options-hover-background-color: var(--gray-800);
   --select-options-selected-background-color: var(--blue-500);
   --select-options-selected-color: var(--white); */
@@ -154,5 +160,6 @@
 html,
 body {
   font-family: var(--font-family);
-  color: 
+  padding: 0;
+  margin: 0;
 }

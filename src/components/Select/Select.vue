@@ -17,16 +17,17 @@ interface Props {
 
 const props = withDefaults(defineProps<Props>(), {
   options: () => [],
-  nativeSelect: true,
+  nativeSelect: false,
   name: undefined,
   ariaLabel: undefined,
   onSelect: undefined,
 });
+
 const listboxId = props.name ? `${props.name}-listbox` : undefined; // for accessibility
 
 const isOpen = ref(false);
-const selectedValue = ref<string | undefined>(undefined);
 
+const selectedValue = ref<string | undefined>(undefined);
 const selectedOption = computed(() => {
   return (
     props.options.find((opt) => opt.value === selectedValue.value) ??
@@ -47,7 +48,7 @@ const onSelectOption = (value: string) => {
   }
 };
 
-// only used if nativeSelect is true
+// called when a native select option is changed
 const handleNativeSelectChange = (event: Event) => {
   const target = event.target as HTMLSelectElement;
   if (props.onSelect) {

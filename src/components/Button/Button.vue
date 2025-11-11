@@ -1,7 +1,10 @@
-<script setup lang="ts"></script>
-
+<script setup lang="ts">
+import { type ButtonHTMLAttributes } from "vue";
+type ButtonProps = /* @vue-ignore */ ButtonHTMLAttributes; // some Vue compiler shenanigans
+const props = defineProps<ButtonProps>();
+</script>
 <template>
-  <button class="button">
+  <button class="button" v-bind="props">
     <slot></slot>
   </button>
 </template>

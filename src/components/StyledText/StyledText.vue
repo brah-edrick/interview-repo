@@ -31,6 +31,8 @@ const props = withDefaults(defineProps<Props>(), {
 <style scoped>
 .styled-text {
   font-family: var(--font-family);
+  padding: 0;
+  margin: 0;
 }
 
 /* Weight classes */

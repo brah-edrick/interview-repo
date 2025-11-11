@@ -1,30 +1,51 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
+import RightSidebar from "./components/RightSideBar.vue";
+import LeftSidebar from "./components/LeftSideBar.vue";
+import Card from "./components/Card/Card.vue";
+import StyledText from "./components/StyledText/StyledText.vue";
 </script>
 
 <template>
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
+  <div class="app">
+    <LeftSidebar class="left-sidebar" />
+    <div class="card-container">
+      <Card min-height="300px" alignY="center" alignX="center">
+        <StyledText as="h3" size="large" weight="bold">Card 1</StyledText>
+      </Card>
+      <Card min-height="300px" alignY="center" alignX="center">
+        <StyledText as="h3" size="large" weight="bold">Card 1</StyledText>
+      </Card>
+      <Card min-height="300px" alignY="center" alignX="center">
+        <StyledText as="h3" size="large" weight="bold">Card 1</StyledText>
+      </Card>
+    </div>
+    <RightSidebar class="right-sidebar" />
   </div>
-  <HelloWorld msg="Vite + Vue" />
 </template>
 
 <style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.app {
+  background-color: var(--gray-800);
+  padding: 40px 120px 64px 120px;
+  display: flex;
+  gap: var(--spacing-unit-large);
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  max-width: 100%;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+
+.left-sidebar,
+.right-sidebar {
+  align-self: start;
+  max-width: var(--sidebar-max-width);
+  width: 100%;
 }
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-unit-default);
+  width: 560px;
 }
 </style>

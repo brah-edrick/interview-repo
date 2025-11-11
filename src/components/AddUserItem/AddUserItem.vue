@@ -39,7 +39,7 @@ const handleAdd = () => {
     <IconEmptyStateAvatarAlt class="avatar" v-else />
 
     <div class="add-user-item-info">
-      <StyledText as="span" weight="medium" size="default">
+      <StyledText as="span" size="default">
         {{ user.name }}
       </StyledText>
       <StyledText as="span" size="small" color="gray-300">
@@ -58,7 +58,7 @@ const handleAdd = () => {
   align-items: center;
   justify-content: space-between;
   gap: var(--spacing-unit-default);
-  padding: var(--spacing-unit-default);
+  padding: var(--spacing-unit-default) 0;
 }
 
 .avatar {
