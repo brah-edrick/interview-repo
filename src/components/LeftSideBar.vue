@@ -2,7 +2,7 @@
 import Card from "./Card/Card.vue";
 import StyledText from "./StyledText/StyledText.vue";
 import Button from "./Button/Button.vue";
-import Select from "./Select/Select.vue";
+import Dropdown from "./Dropdown/Dropdown.vue";
 </script>
 
 <template>
@@ -11,8 +11,8 @@ import Select from "./Select/Select.vue";
       <StyledText weight="bold" size="medium" as="h2"> Hello World </StyledText>
       <StyledText as="p">This is some regular text</StyledText>
       <Button>Let's Go</Button>
-      <div class="select-container">
-        <Select
+      <div class="dropdown-container">
+        <Dropdown
           :options="[
             { displayName: 'Option 1', value: 'option1' },
             { displayName: 'Option 2', value: 'option2' },
@@ -33,7 +33,7 @@ import Select from "./Select/Select.vue";
   justify-content: flex-start;
   gap: var(--spacing-unit-medium);
 }
-.select-container {
+.dropdown-container {
   width: 100%;
 }
 </style>
