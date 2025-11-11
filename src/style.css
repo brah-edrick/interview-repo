@@ -63,6 +63,7 @@
   BORDER RADIUS - END
   */
 
+
   /** SPACING UNITS - START
   */
   --spacing-unit-default: 10px;
@@ -71,12 +72,19 @@
   SPACING UNITS - END
   */
 
+
   /** BOX SHADOW - START
   */
   --box-shadow-default: 0px 1px 5px 0px #3C3C432E;
   /*
   BOX SHADOW - END
   */
+
+/*******************
+  COMPONENT STYLES 
+*******************/
+
+/* TODO eventually many of these will be moved to their own files */
 
   /* 
   BUTTON STYLES - START
@@ -94,15 +102,49 @@
   BUTTON STYLES - END
   */
 
-  /** CARD STYLES - START
+
+  /*
+  CARD STYLES - START
   */
   --card-background-color: var(--white);
   --card-border-radius: var(--border-radius-medium);
   --card-border: none;
   --card-padding: var(--spacing-unit-default);
   --card-box-shadow: var(--box-shadow-default);
-  
+  /*
+  CARD STYLES - END
+  */
 
+
+  /*
+  SELECT STYLES - START
+  */
+  --select-background-color: var(--white);
+  --select-border-radius: var(--border-radius-medium);
+  --select-padding: var(--spacing-unit-default);
+
+  --select-icon-padding-right: var(--spacing-unit-medium);
+  --select-icon-size: 15px;
+  
+  --select-trigger-border: 1px solid var(--gray-600);
+  --select-trigger-font-size: var(--font-size-medium);
+  --select-trigger-font-weight: var(--font-weight-medium);
+  
+  
+  --select-options-list-box-shadow: var(--card-box-shadow);
+  --select-options-list-border: var(--card-border);
+  --select-options-list-y-offset: 2px;
+
+  --select-options-font-size: var(--font-size-default);
+  --select-options-font-weight: var(--font-weight-regular);
+  --select-options-padding-x: var(--spacing-unit-default);
+  --select-options-padding-y: var(--spacing-unit-medium);
+  /* --select-options-hover-background-color: var(--gray-800);
+  --select-options-selected-background-color: var(--blue-500);
+  --select-options-selected-color: var(--white); */
+  /*
+  SELECT STYLES - END
+  */
 }
 
 
