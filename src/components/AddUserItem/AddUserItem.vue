@@ -38,7 +38,7 @@ const handleAdd = () => {
     />
     <IconEmptyStateAvatarAlt class="avatar" v-else />
 
-    <div class="add-user-item-info">
+    <div class="user-info">
       <StyledText as="span" size="default">
         {{ user.name }}
       </StyledText>
@@ -67,7 +67,7 @@ const handleAdd = () => {
   width: 40px;
 }
 
-.add-user-item-info {
+.user-info {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -88,11 +88,5 @@ const handleAdd = () => {
   &:hover {
     cursor: pointer;
   }
-}
-
-.add-user-item-icon {
-  width: 16px;
-  height: 16px;
-  flex-shrink: 0;
 }
 </style>

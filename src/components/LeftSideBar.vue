@@ -11,7 +11,7 @@ import Dropdown from "./Dropdown/Dropdown.vue";
       <StyledText weight="bold" size="medium" as="h2"> Hello World </StyledText>
       <StyledText as="p">This is some regular text</StyledText>
       <Button>Let's Go</Button>
-      <div class="dropdown-container">
+      <div class="dropdown-wrapper">
         <Dropdown
           :options="[
             { displayName: 'Option 1', value: 'option1' },
@@ -33,7 +33,7 @@ import Dropdown from "./Dropdown/Dropdown.vue";
   justify-content: flex-start;
   gap: var(--spacing-unit-medium);
 }
-.dropdown-container {
+.dropdown-wrapper {
   width: 100%;
 }
 </style>

@@ -64,7 +64,6 @@ const cardStyle = computed(() => {
 .card {
   display: flex;
   flex-direction: column;
-
   background-color: var(--card-background-color);
   border-radius: var(--card-border-radius);
   border: var(--card-border);

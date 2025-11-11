@@ -177,11 +177,10 @@ const handleNativeSelectChange = (event: Event) => {
   align-items: center;
   justify-content: space-between;
   cursor: pointer;
-}
-
-.select-trigger-text {
-  flex: 1;
-  text-align: left;
+  .select-trigger-text {
+    flex: 1;
+    text-align: left;
+  }
 }
 
 .select-list {
